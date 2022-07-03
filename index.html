@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>voice-change-omatic</title>
+    <link href="styles/app.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>voice change o matic</h1>
+      </header>
+
+      <canvas class="visualizer" width="640" height="100"></canvas>
+      <form class="controls">
+        <div>
+          <label for="voice">voice setting</label>
+          <select id="voice" name="voice">
+            <option value="distortion">Distortion</option>
+            <option value="convolver">Reverb</option>
+            <option value="biquad">Bass Boost</option>
+            <option value="off" selected>Off</option>
+          </select>
+        </div>
+        <div>
+          <label for="visual">Visualizer setting</label>
+          <select id="visual" name="visual">
+            <option value="sinewave">Sinewave</option>
+            <option value="frequencybars" selected>Frequency bars</option>
+            <option value="off">Off</option>
+          </select>
+        </div>
+        <div>
+          <a class="mute">Mute</a>
+          <button id="test">test</button>
+        </div>
+      </form>
+    </div>
+    <label for="toggle">?</label>
+    <input type="checkbox" id="toggle" />
+  </body>
+  <script src="scripts/app.js"></script>
+</html>
